@@ -1,3 +1,7 @@
+# Use all private binaries
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,vendor/mk-priv/prebuilt/mokee/bin/$(MK_CPU_ABI),system/bin)
+
 # Use all private libraries
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*.so,vendor/mk-priv/prebuilt/mokee/lib/arm64-v8a,system/lib64) \
