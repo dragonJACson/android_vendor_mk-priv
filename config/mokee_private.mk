@@ -1,7 +1,3 @@
-# Use all private binaries
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,vendor/mk-priv/prebuilt/mokee/bin/arm64-v8a,system/bin)
-
 # Default input method apps
 PRODUCT_PACKAGES += \
 		Gboard
